@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
-import Componente from './01-componentes/componente';
+import Componente from './01-componentes/01-componente';
+import Propiedades from './01-componentes/02-propiedades';
 import './App.css';
 
 function App() {
@@ -11,19 +12,12 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-
       </header>
 
       <section>
-        <Componente msg= "Hola soy un componente funcional expresado desde una prop"/>
+        <Componente msg= "Hola soy un componente expresado desde una prop"/>
+        <hr />
+        <Propiedades msg2 = "mensaje de una propiedad"/>
       </section>
     </div>
   );
