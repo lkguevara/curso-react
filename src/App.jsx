@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
        <section>
-        <Componentes msg = "Hola soy un componente funcional expresado desde una prop"/>
+        <Componentes msg = "Hola soy un componente funcional expresado desde una prop."/>
         <Propiedades />
         <UseStateEjm />
         <UseEffectEjm />
