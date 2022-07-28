@@ -1,3 +1,11 @@
+/*
+  Permite hacer uso del ciclo de vida en un componente funcional. useEffect recibe como parámetro una función que se ejecutará cada vez que nuestro componente se renderice, ya sea por cambios del estado o las propiedades. permite que los componentes funcionales tengan métodos de ciclo de vida. 
+
+    useEffect( () => {
+
+    }, [])
+ */
+
 import React, { useState, useEffect } from 'react';
 
 const UseEffectEjm = () => {

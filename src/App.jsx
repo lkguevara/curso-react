@@ -11,10 +11,14 @@ function App() {
   return (
     <div className="App">
        <section>
-        <Componentes msg = "Hola soy un componente funcional expresado desde una prop."/>
-        <Propiedades />
-        <UseStateEjm />
-        <UseEffectEjm />
+
+        <Componentes msg = "Hola soy un componente funcional expresado desde una prop." /><hr />
+
+        <Propiedades curso="Curso de React" fecha= '25 de junio' descripcion= 'curso basado en la mejor libreria de JavaScript' /> <hr />
+        
+        <UseStateEjm /> <hr />
+
+        <UseEffectEjm /> <hr />
  
       </section>
       
