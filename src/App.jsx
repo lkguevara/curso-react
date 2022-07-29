@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Componentes from './01-básicos/Componentes'
+import Formulario from './01-básicos/Formulario'
 import Propiedades from './01-básicos/Propiedades'
 import UseEffectEjm from './01-básicos/UseEffectEjm'
 import UseStateEjm from './01-básicos/UseStateEjm'
@@ -19,6 +20,8 @@ function App() {
         <UseStateEjm /> <hr />
 
         <UseEffectEjm /> <hr />
+
+        <Formulario /> <hr />
  
       </section>
       
