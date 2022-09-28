@@ -19,7 +19,7 @@ const Formulario = () => {
     <>
         <h1>Formularios</h1>
         <form 
-            onSubmit={handleSubmit}>
+            onSubmit={handleSubmit}> //Función que se ejecuta cuando se envía el formulario
 
             <input 
                 type="text" 

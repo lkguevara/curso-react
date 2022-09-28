@@ -1,9 +1,10 @@
-/*
+/*  TEORÍA
     - Devuelve un valor con estado y una función para actualizarlo. 
-    
+    - Nos indica el estado actual de la aplicación
     - Permite manipular el estado de un componente funcional. Para actualizar el estado tenemos que utilizar el método resultante de la destructuración de useState y pasarle el nuevo valor.
 
-    - const [variable, setVariable] = useState(estadoInicial)
+  Sintaxis
+    - const [variable, setVariable] = useState(estadoInicialVariable)
 */
 
 import React, { useState } from 'react';

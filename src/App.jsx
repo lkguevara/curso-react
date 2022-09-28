@@ -4,7 +4,6 @@ import Formulario from './03-Formularios/Formulario'
 import Propiedades from './01-básicos/06-Propiedades'
 import UseEffectEjm from './02-Hooks/UseEffectEjm'
 import UseStateEjm from './02-Hooks/UseStateEjm'
-
 import './App.css'
 
 function App() {
