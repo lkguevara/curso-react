@@ -21,3 +21,5 @@
 
     - Los Hooks se colocan en la parte superior de tus componentes de React.
     - No se deben colocar dentro de condicionales, tampoco después de un return.
+
+    <!-- revisar -->
