@@ -1,10 +1,11 @@
 import { useState } from 'react'
-import Componentes from './01-básicos/05-Componentes'
-import Formulario from './03-Formularios/Formulario'
-import Propiedades from './01-básicos/06-Propiedades'
-import UseEffectEjm from './02-Hooks/UseEffectEjm'
-import UseStateEjm from './02-Hooks/UseStateEjm'
+import Componentes from './01-Componentes-funcionales/02-Componentes'
+import Formulario from './04-Formularios/Formulario'
+import Propiedades from './01-Componentes-funcionales/03-Propiedades'
+import UseEffectEjm from './03-Hooks/UseEffectEjm'
+import UseStateEjm from './03-Hooks/UseStateEjm'
 import './App.css'
+import ComponenteClase from './01-Componentes-funcionales/04-ComponenteClase'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,9 +14,10 @@ function App() {
     <div className="App">
        <section>
 
-        <Componentes msg2 = "Soy un componente funcional expresado desde una prop a través de una función expresada." /><hr />
+        <Componentes mensaje = "Soy un componente funcional"/><hr/>
+        <ComponenteClase msg = "Soy un componente de clase"/><hr/>
 
-        <Propiedades curso="Propiedades en react" fecha= '31 de agosto 2022' descripcion= 'aprendiendo sobre las props en react' cadena= 'Esto es una cadena de texto desde las props' numero= {1234}/> <hr />
+        <Propiedades curso="Aprendiendo React" fecha= '23 de enero 2023' descripcion= 'componentes y propiedades' cadena= 'Esto es una cadena de texto desde las props' numero= {1234}/> <hr />
         
         <UseStateEjm /> <hr />
 
