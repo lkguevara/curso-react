@@ -15,7 +15,7 @@
 const Propiedades = ({curso, fecha, descripcion}) => {
   return (
     <div>
-        <h1>Propiedades en React</h1>
+        <h1 className="text-red-500 font-bold text-3xl text-center">Propiedades en React</h1>
         <p>{curso}</p>
         <p>{fecha}</p>
         <p>{descripcion}</p>

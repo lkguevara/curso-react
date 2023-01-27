@@ -14,4 +14,15 @@ React Router es la librería más popular para la gestión de rutas en un proyec
 
 <Route/> → Representa una ruta en el árbol, necesita al menos las siguientes propiedades path y element, para representar una ruta.
 
+# 3. NavLink
+Si queremos que el usuario pueda navegar entre las diferentes rutas de nuestra aplicación, debemos usar el componente NavLink, este componente es muy similar al componente Link, pero tiene algunas diferencias, por ejemplo, NavLink nos permite agregar estilos a la ruta activa, es decir, a la ruta que se encuentra en la URL del navegador, además no recarga la página cuando se hace click en el enlace.
+
+# 4 Link
+El componente Link nos permite navegar entre las diferentes rutas de nuestra aplicación, este componente es muy similar al componente NavLink, pero no tiene algunas de las características que tiene NavLink, por ejemplo, Link no nos permite agregar estilos a la ruta activa.
+
+# 5. Params
+Los parámetros de ruta son valores que se pasan a través de la URL, estos parámetros se pueden usar para identificar recursos únicos, por ejemplo, si tenemos una aplicación de blog, podemos usar los parámetros de ruta para identificar cada publicación de nuestro blog, de esta manera, cada publicación tendrá su propia URL.
+
+# 6. Navigate
+El componente Navigate nos permite navegar entre las diferentes rutas de nuestra aplicación. 
 <!-- https://www.escuelafrontend.com/react-router-6 -->

@@ -17,26 +17,29 @@ const Formulario = () => {
 
   return (
     <>
-        <h1>Formularios</h1>
-        <form 
-            onSubmit={handleSubmit}> //Función que se ejecuta cuando se envía el formulario
+        <h1 className="text-red-500 font-bold text-3xl text-center">Formularios</h1>
 
-            <input 
+        <form 
+            onSubmit={handleSubmit}> 
+
+            <input className='border-2 border-black m-2'
                 type="text" 
                 name= 'buscar' 
                 autoComplete='off' 
+                placeholder='Buscar'
                 value={nombre}
-                onChange={e => setNombre(e.target.value)} // e.target.value es el valor del input
+                onChange={e => setNombre(e.target.value)} 
             />
 
-            <button type="submit">Buscar</button>
+            <button className='border-solid rounded-md p-1 border-2 border-lime-600' type="submit">Buscar</button>
             <p>Resultados para: <strong>{nombre}</strong></p>
         </form>
 
+{/* Ejemplo 2 */}
         <form 
             onSubmit={handleSubmit}                                         
         >
-            <input 
+            <input className='border-2 border-black m-2'
                 type="text" 
                 name= 'email' 
                 autoComplete='off' 
@@ -45,7 +48,7 @@ const Formulario = () => {
                 onchange={(e)=> setEmail(e.target.value)} 
                 
             />
-            <input 
+            <input className='border-2 border-black m-2'
                 type="password" 
                 name= 'password' 
                 autoComplete='off' 
@@ -54,9 +57,12 @@ const Formulario = () => {
                 onchange={e => setPassword(e.target.value)} 
             />
 
-            <button type="submit">Login</button>
+            <button className='border-solid rounded-md p-1 border-2 border-lime-600' type="submit">Login</button>
            
         </form>
+        <br/>
+{/* Ejemplo 3 */}
+       
     </>
     
   );

@@ -25,23 +25,23 @@ const UseStateEjm = () => {
   const disminuir = () => setCount(count - 1);
   return (
     <>
-      <div className="UseStateEjm">
-        <h1>useState</h1>
-        <button type="button" onClick={handleClick}> {!darkMode ? 'Dark Mode' : 'Light Mode'} </button>
-        <button type="button" onClick={() => setDarkMode
+      <h1 className="text-red-500 font-bold text-3xl text-center">useState</h1>
+      <div className='flex justify-center mt-5'>
+        <button className='bg-lime-700 rounded-lg p-2 text-sm mr-5 text-white' type="button" onClick={handleClick}> {!darkMode ? 'Dark Mode' : 'Light Mode'} </button>
+        <button className='bg-lime-700 rounded-lg p-2 text-sm mr-5 text-white' type="button" onClick={() => setDarkMode
           (!darkMode)}>{darkMode ? 'Dark Mode 2' : 'Light Mode 2'}</button>
-      </div> <br />
+      </div>
 
-      <div>
-        <button onClick={() => setCount(count + 1)}>{count} likes</button>
-        <button onClick={() => setCount(count - 1)}>{disminuir} Dislikes</button>
-        <button onClick= {reset}> Reset </button>
-      </div><br />
+      <div className='flex justify-center mt-5'>
+        <button className='bg-lime-700 rounded-lg p-2 text-sm mr-5 text-white' onClick={() => setCount(count + 1)}>{count} likes</button>
+        <button className='bg-lime-700 rounded-lg p-2 text-sm mr-5 text-white' onClick={() => setCount(count - 1)}>{disminuir} Dislikes</button>
+        <button className='bg-lime-700 rounded-lg p-2 text-sm mr-5 text-white' onClick= {reset}> Reset </button>
+      </div>
 
-      <div>
-        <button onClick={() => setSuma(suma + 1)}> sumar</button>
-        <button onClick={() => setSuma(suma - 1)}> restar</button>
-        <button onClick= {resetSuma}> Reset </button>
+      <div className='flex justify-center my-5'>
+        <button className='bg-lime-700 rounded-lg p-2 text-sm mr-5 text-white' onClick={() => setSuma(suma + 1)}> sumar</button>
+        <button className='bg-lime-700 rounded-lg p-2 text-sm mr-5 text-white' onClick={() => setSuma(suma - 1)}> restar</button>
+        <button className='bg-lime-700 rounded-lg p-2 text-sm mr-5 text-white'  onClick= {resetSuma}> Reset </button>
         <h2> {suma} </h2>
       </div>
       

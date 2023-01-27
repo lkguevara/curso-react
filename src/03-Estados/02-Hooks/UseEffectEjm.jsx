@@ -25,14 +25,6 @@ const UseEffectEjm = () => {
       )
     }
 
-  // ejemplo 1
-  useEffect(() => {
-    fetch('https://rickandmortyapi.com/api/character/')
-      .then(response => response.json())
-      .then(data => setCharacters(data.results));
-  }, []);
-
-  // ejemplo 2
   useEffect(() => {
     let temporizador;
 
@@ -50,18 +42,13 @@ const UseEffectEjm = () => {
 
 
   return (
-    <div className="Characters">
-      <h2>useEffect</h2>
+    <div className='flex flex-col justify-center mt-5'>
+      <h1 className="text-red-500 font-bold text-3xl text-center">useEffect</h1>
 
-      <h3>fecha</h3>
-      {iniciar ? <Reloj fecha={fecha} hora={hora} /> : "Debes iniciar el reloj"} <br />
-      <button onClick={() => setIniciar(true)}>Iniciar reloj</button>
-      <button onClick={() => setIniciar(false)}>Detener reloj</button>
-
-      <h3>api rick and morthy</h3>
-      {characters.map(character => (
-        <p>{character.name}</p>
-      ))}
+      <h3 className="font-semi-bold text-lg text-center mt-5">fecha</h3>
+      {iniciar ? <Reloj fecha={fecha} hora={hora} /> : <span className="font-semi-bold text-lg text-center">Debes iniciar el reloj</span> } <br />
+      <button className='bg-lime-700 rounded-sm w-24 p-2 text-sm m-auto text-white'   onClick={() => setIniciar(true)}>Iniciar reloj</button>
+      <button className='bg-lime-700 rounded-sm w-28 p-2 text-sm m-auto my-5 text-white' onClick={() => setIniciar(false)}>Detener reloj</button>
 
     </div>
   );
