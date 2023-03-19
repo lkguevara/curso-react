@@ -1,17 +1,18 @@
-# 1 Definición
-Un formulario en React es un componente que nos permite capturar información del usuario. Los formularios son una parte muy importante de cualquier aplicación web, ya que nos permiten interactuar con el usuario y obtener información de él.
+# 1 Formularios 
+Los formularios son una de las partes más importantes de cualquier aplicación web. En este capítulo vamos a ver cómo crear formularios en React, y cómo manejar los datos que se introducen en los formularios.
 
-# 2 Formularios en React
-Los formularios en React son componentes controlados, es decir, los datos que se muestran en el formulario son controlados por el estado de React. Para crear un formulario en React, debemos crear un componente que contenga un elemento form, y dentro de este elemento form debemos crear un elemento input para cada campo del formulario.
-
-# 3 Manejo de formularios
+# 2 Manejo de formularios
 Existen dos maneras básicas de manejar formularios en React:
-    
     * Formularios controlados
     * Formularios no controlados
 
-# 4 Formularios controlados
-Los formularios controlados son aquellos en los que los datos que se muestran en el formulario son controlados por el estado de React. Para crear un formulario controlado en React, debemos crear un componente que contenga un elemento form, y dentro de este elemento form debemos crear un elemento input para cada campo del formulario. Además, debemos crear un estado para cada campo del formulario, y debemos crear un evento onChange para cada campo del formulario, que actualice el estado del campo correspondiente.
+Se deberá crear un estado por cada propiedad del formulario para poder controlar los cambios en los campos del formulario. Para ello, se deberá crear un evento onChange para cada campo del formulario, que actualice el estado del campo correspondiente.
 
-# 5 Formularios no controlados
-Los formularios no controlados son aquellos en los que los datos que se muestran en el formulario no son controlados por el estado de React. Para crear un formulario no controlado en React, debemos crear un componente que contenga un elemento form, y dentro de este elemento form debemos crear un elemento input para cada campo del formulario. Además, debemos crear una referencia para cada campo del formulario, y debemos crear un evento onSubmit para el formulario, que obtenga los datos de los campos del formulario a través de las referencias.
+## Formularios controlados
+Los formularios controlados (también conocidos como formularios controlados por estado) son una técnica utilizada en el desarrollo de aplicaciones web para manejar el estado de los elementos de formulario de manera explícita. 
+Cuando un usuario interactúa con un elemento de formulario controlado, su estado interno se actualiza de forma explícita, lo que a su vez actualiza la vista del formulario en la pantalla. Esto permite que el desarrollador tenga un mayor control sobre el comportamiento del formulario y evita problemas comunes asociados con los formularios no controlados, como la falta de sincronización entre los datos del formulario y el estado interno de la aplicación.
+
+## Formularios no controlados
+En un formulario no controlado, los elementos de formulario (como un campo de texto o una casilla de verificación) son representados por el navegador web. El estado de estos elementos es manejado por el propio navegador y no por el desarrollador de la aplicación. Esto significa que cuando un usuario interactúa con un elemento de formulario no controlado, el estado del elemento se actualiza en el navegador, pero no en el estado interno de la aplicación.
+
+![Imagen de ejemplo](../../Public/forms.png)

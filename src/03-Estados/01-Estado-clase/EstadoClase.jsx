@@ -46,16 +46,16 @@ export default class EstadoClase extends Component {
         return (
         <>
             <div className=" ">
-                <h1 className="text-red-500 font-bold text-3xl text-center">Estado de clase</h1>
+                <h1 className="text-red-500 font-bold text-3xl">Estado de clase</h1>
 
-                <div className='flex justify-center mt-5'>
+                <div className='flex justify-start mt-5'>
                     <button className='bg-lime-700 rounded-lg p-2 text-white' type="button" onClick={this.handleClick}>
                         {!this.state.darkMode ? 'Dark Mode' : 'Light Mode'}
                     </button>
                     
                 </div>
 
-                <div className='flex justify-center mt-5'>
+                <div className='flex justify-start mt-5'>
                     <button className='bg-lime-700 rounded-lg p-2 text-sm mr-5 text-white' onClick={() => this.setState({ count: this.state.count + 1 })}>
                         {this.state.count} likes
                     </button>
@@ -65,7 +65,7 @@ export default class EstadoClase extends Component {
                     <button className='bg-lime-700 rounded-lg p-2 text-sm mr-5 text-white' onClick={this.reset}> Reset </button>
                 </div>
             
-            <div className='flex justify-center my-5'>
+            <div className='flex justify-start my-5'>
                 <button className='bg-lime-700 rounded-lg p-2 text-sm mr-5 text-white' onClick={() => this.setState({ suma: this.state.suma + 1 })}>
                     sumar
                 </button>

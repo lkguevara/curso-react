@@ -5,7 +5,7 @@
 const Componente2 = ({mensaje}) => {
     return (
         <div>
-            <h1 className="text-red-500 font-bold text-3xl text-center">Componentes</h1>
+            <h1 className="text-red-500 font-bold text-3xl">Componentes</h1>
             <p>{mensaje}</p>
         </div>
     

@@ -8,7 +8,7 @@ import React from 'react'
 const PropChildren = (props) => {
   return (
     <div>
-        <h1 className="text-red-500 font-bold text-3xl text-center">Prop Children</h1>
+        <h1 className="text-red-500 font-bold text-3xl">Prop Children</h1>
         <p>{props.title}</p>
         <div>{props.children}</div>
     </div>

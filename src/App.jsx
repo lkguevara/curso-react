@@ -8,7 +8,7 @@ import UseEffectEjm from './03-Estados/02-Hooks/UseEffectEjm'
 import UseStateEjm from './03-Estados/02-Hooks/UseStateEjm'
 import './App.css'
 import Formulario from './04-Formularios/Formulario'
-import Redux from './08-State-management/01-Redux/React-Redux'
+
 
 
 
@@ -28,7 +28,7 @@ function App() {
         <UseEffectEjm /> <hr />
 
         <Formulario /> <hr />
-        <Redux /> <hr />
+
     </div>
   )
 }
