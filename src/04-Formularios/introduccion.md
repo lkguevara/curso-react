@@ -16,3 +16,9 @@ Cuando un usuario interactúa con un elemento de formulario controlado, su estad
 En un formulario no controlado, los elementos de formulario (como un campo de texto o una casilla de verificación) son representados por el navegador web. El estado de estos elementos es manejado por el propio navegador y no por el desarrollador de la aplicación. Esto significa que cuando un usuario interactúa con un elemento de formulario no controlado, el estado del elemento se actualiza en el navegador, pero no en el estado interno de la aplicación.
 
 ![Imagen de ejemplo](../../Public/forms.png)
+
+# 3 Key
+Una key permite identificar de manera única a los elementos renderizados de una lista. 
+Las keys son necesarias para que React pueda identificar qué elementos han cambiado, son agregados o eliminados. Las keys deben ser únicas entre los elementos de una lista, pero no necesariamente entre las listas.
+
+React necesita que cada vez que se agarra una lista de elementos, se le asigne una key a cada uno de ellos. Un ejemplo clave es cuando se realiza un map.
