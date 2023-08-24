@@ -1,5 +1,8 @@
 /*
-  Permite gestionar y manipular todos los cambios que ocurran dentro de los componentes definidos con funciones. useEffect recibe como parámetro una función que se ejecutará cada vez que nuestro componente se renderice, ya sea por cambios del estado o las propiedades. 
+  - Permite gestionar y manipular todos los cambios que ocurran dentro de los componentes definidos con funciones. 
+  - useEffect recibe como parámetro una función que se ejecutará cada vez que nuestro componente se renderice, ya sea por cambios del estado o las propiedades. 
+  - useEffect recibe como segundo parámetro un array de dependencias, que son las variables que se deben tener en cuenta para ejecutar la función que recibe como primer parámetro.
+  - useEffect es un Hook de React que te permite sincronizar un componente con un sistema externo.
 
     useEffect( () => {
 

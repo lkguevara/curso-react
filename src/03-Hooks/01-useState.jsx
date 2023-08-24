@@ -1,10 +1,14 @@
 /*  TEORÍA
+    - useState es un Hook de React que te permite agregar una variable de estado a tu componente.
     - Devuelve un valor con estado y una función para actualizarlo. 
     - Nos indica el estado actual de la aplicación
     - Permite manipular el estado de un componente funcional. Para actualizar el estado tenemos que utilizar el método resultante de la destructuración de useState y pasarle el nuevo valor.
+    - La convención es nombrar variables de estado como [algo, setAlgo] usando desestructuración de arrays.
 
   Sintaxis
     - const [variable, setVariable] = useState(estadoInicialVariable)
+
+  https://es.react.dev/reference/react/useState
 */
 
 import React, { useState } from 'react';
@@ -27,9 +31,13 @@ const UseStateEjm = () => {
     <>
       <h1 className="text-red-500 font-bold text-3xl">useState</h1>
       <div className='flex justify-start mt-5'>
-        <button className='bg-lime-700 rounded-lg p-2 text-sm mr-5 text-white' type="button" onClick={handleClick}> {!darkMode ? 'Dark Mode' : 'Light Mode'} </button>
-        <button className='bg-lime-700 rounded-lg p-2 text-sm mr-5 text-white' type="button" onClick={() => setDarkMode
-          (!darkMode)}>{darkMode ? 'Dark Mode 2' : 'Light Mode 2'}</button>
+        <button 
+          className= {!darkMode ? 'bg-black rounded-lg p-2 text-sm mr-5 text-white' : 'bg-white rounded-lg p-2 text-sm mr-5 text-gray-700 border-2 border-orange-500'}
+          type="button"
+          onClick={handleClick}
+        > 
+          {!darkMode ? 'Dark Mode' : 'Light Mode'} 
+        </button>
       </div>
 
       <div className='flex justify-start mt-5'>

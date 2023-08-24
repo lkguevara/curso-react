@@ -15,3 +15,5 @@ Las características principales de React son:
 -Unidireccional: React es unidireccional, lo que significa que los datos fluyen en una sola dirección. Los datos fluyen de los componentes padres a los componentes hijos.
 
 -Universal: React se puede ejecutar tanto en el cliente como en el servidor. Además, puedes usar React Native para crear aplicaciones nativas para Android e iOS.
+
+<!-- Doc: https://es.react.dev/ -->

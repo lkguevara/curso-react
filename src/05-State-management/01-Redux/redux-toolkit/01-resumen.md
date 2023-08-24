@@ -20,3 +20,18 @@ Para instalar Redux Toolkit, debemos ejecutar el siguiente comando en la termina
 ```
  npm install @reduxjs/toolkit react-redux
 ```
+
+# 3. Qué incluye Redux Toolkit
+Redux Toolkit incluye estas API:
+
+  - configureStore(): ajusta createStorepara proporcionar opciones de configuración simplificadas y buenos valores predeterminados. Puede combinar automáticamente sus reductores de rebanadas, agregar cualquier middleware Redux que proporcione, incluye redux-thunkpor defecto y permite el uso de la extensión Redux DevTools.
+
+  - createReducer(): eso le permite proporcionar una tabla de búsqueda de tipos de acción para funciones de reducción de casos, en lugar de escribir declaraciones de cambio. Además, utiliza automáticamente la immerbiblioteca para permitirle escribir actualizaciones inmutables más simples con código mutativo normal, como state.todos[3].completed = true.
+  - createAction(): genera una función creadora de acción para la cadena de tipo de acción dada. La función misma se ha toString()definido, por lo que se puede usar en lugar de la constante de tipo.
+
+  - createSlice(): acepta un objeto de funciones reductoras, un nombre de segmento y un valor de estado inicial, y genera automáticamente un reductor de segmento con los creadores de acción y los tipos de acción correspondientes.
+
+  - createAsyncThunk: acepta una cadena de tipo de acción y una función que devuelve una promesa, y genera un procesador que distribuye pending/fulfilled/rejectedtipos de acción basados ​​en esa promesa
+
+  - createEntityAdapter: genera un conjunto de reductores y selectores reutilizables para gestionar datos normalizados en la tienda
+La createSelectorutilidad de la biblioteca Reselect , reexportada para facilitar su uso.

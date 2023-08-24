@@ -8,7 +8,7 @@ Para usar React Router en la web, debe ejecutar:
 
 React Router es la librería más popular para la gestión de rutas en un proyecto de React, esta tiene tres componentes esenciales:
 
-<BrowserRouter/> → Conecta nuestra aplicación a la URL del navegador, es decir mantiene la interfaz de usuario en sincronía con la URL del navegador mediante la API History de HTML5.
+<BrowserRouter/> → Conecta nuestra aplicación a la URL del navegador, es decir mantiene la interfaz de usuario en sincronía con la URL del navegador mediante la API History de HTML5. Se debe usar este componente en la parte superior de la aplicación, es decir, debe envolver a todos los componentes que representan una ruta, lo anterior en el archivo main.js.
 
 <Routes/> → Genera un árbol de rutas y a partir de este nos permite reemplazar la vista con el componente que coincide con la URL de nuestra barra de navegación y nos va a renderizar solamente dicho componente.
 
