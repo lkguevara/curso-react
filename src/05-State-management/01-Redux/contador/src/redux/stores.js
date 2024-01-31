@@ -9,16 +9,3 @@ const store = createStore(
 );
 
 export default store
-
-/* Aplicando redux toolkit 
-
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from './counterSlice';
-
-export const store = configureStore({
-    reducer: {
-        counter: counterReducer
-    }
-});
-
-*/
