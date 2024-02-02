@@ -15,12 +15,16 @@ export const cartSlice = createSlice({
         addProduct: (state, action) => {
             state.productsList = [...state.productsList, action.payload];
             state.totalCount += 1;
+        },
+        removeProductFromCart: (state, action) => {
+            state.productsList = state.productsList.filter(product => product.id !== action.payload);
+            state.totalCount -= 1;
         }
     },
 });
 
 // Exportación de los reducers
-export const { addProduct } = cartSlice.actions;
+export const { addProduct, removeProductFromCart} = cartSlice.actions;
 
 // Exportación del estado
 export default cartSlice.reducer;
